@@ -1,23 +1,23 @@
-#Secure Multi-Party Computation (SMPC) for Federated Learning
-Project Overview
+# Secure Multi-Party Computation (SMPC) for Federated Learning
 
-This project explores the application of Secure Multi-Party Computation (SMPC) in federated learning to train agents (mice) to navigate a grid world while avoiding predators (cats). SMPC ensures that the federated learning process is privacy-preserving, protecting the individual data of each participant.
+## Project Overview
+This project explores the application of **Secure Multi-Party Computation (SMPC)** in federated learning to train agents (mice) to navigate a grid world while avoiding predators (cats). SMPC ensures that the federated learning process is **privacy-preserving**, protecting the individual data of each participant.
 
-The project combines Reinforcement Learning (RL) techniques such as:
+The project combines **Reinforcement Learning (RL)** techniques such as:
+- **Tabular Q-Learning**
+- **Deep Q-Learning**
+- **Federated Deep Q-Learning**
+- **Federated SMPC Deep Q-Learning**
 
-    Tabular Q-Learning
-    Deep Q-Learning
-    Federated Deep Q-Learning
-    Federated SMPC Deep Q-Learning
+## Key Features
+- **Privacy-Preserving Federated Learning**: Incorporates SMPC to securely aggregate models from multiple agents without exposing their individual data.
+- **Multi-Agent Reinforcement Learning**: Agents learn in parallel to navigate a dynamic environment.
+- **Customizable Environment**: Configurable grid world with adjustable parameters for learning and gameplay.
 
-Key Features
+---
 
-    Privacy-Preserving Federated Learning: Incorporates SMPC to securely aggregate models from multiple agents without exposing their individual data.
-    Multi-Agent Reinforcement Learning: Agents learn in parallel to navigate a dynamic environment.
-    Customizable Environment: Configurable grid world with adjustable parameters for learning and gameplay.
-
-Project Structure
-
+## Project Structure
+```plaintext
 ├── __pycache__/             # Python cache files
 ├── resources/
 │   └── world.txt            # Definition of the grid environment
@@ -32,7 +32,7 @@ Project Structure
 └── README.md                # Project documentation
 
 Setup Instructions
-1. Prerequisites
+Prerequisites
 
     Python 3.8 or higher
     Required packages:
@@ -43,19 +43,19 @@ Setup Instructions
 
 Install dependencies:
 
-pip install numpy torch matplotlib crypten
+    pip install numpy torch matplotlib crypten
 
-2. Run the Simulation
+Run the Simulation
 
 To start the simulation, execute:
 
-python CatandMouse.py
+    python CatandMouse.py
 
-3. Analyze Results
+Analyze Results
 
 Generate performance metrics and visualize results:
 
-python results.py
+    python results.py
 
 Configurations
 
@@ -101,3 +101,17 @@ Combines models trained independently by multiple agents into a single global mo
 4. Federated SMPC Deep Q-Learning
 
 Adds a layer of privacy by using SMPC to securely aggregate weights from individual models.
+Results
+
+Training results are stored in the results/ directory as .npz files:
+
+    lifetime: Average lifetime of agents.
+    var: Variance in agent performance.
+    time: Total runtime of the simulation.
+
+Visualization
+
+Use results.py to generate plots for:
+
+    Average Lifetime: Tracks agents' survival over time.
+    Variance: Evaluates performance consistency across agents.
