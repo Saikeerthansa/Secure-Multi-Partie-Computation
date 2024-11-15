@@ -1,4 +1,4 @@
-Secure Multi-Party Computation (SMPC) for Federated Learning
+#Secure Multi-Party Computation (SMPC) for Federated Learning
 Project Overview
 
 This project explores the application of Secure Multi-Party Computation (SMPC) in federated learning to train agents (mice) to navigate a grid world while avoiding predators (cats). SMPC ensures that the federated learning process is privacy-preserving, protecting the individual data of each participant.
