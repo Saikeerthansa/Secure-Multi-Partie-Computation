@@ -91,17 +91,17 @@ Federated Learning Parameters
 
 Learning Methods
 1. Tabular Q-Learning
+    Uses a table to store Q-values for state-action pairs.
 
-Uses a table to store Q-values for state-action pairs.
 2. Deep Q-Learning
+    Employs a neural network to approximate Q-values for complex environments.
 
-Employs a neural network to approximate Q-values for complex environments.
 3. Federated Deep Q-Learning
+   Combines models trained independently by multiple agents into a single global model.
 
-Combines models trained independently by multiple agents into a single global model.
 4. Federated SMPC Deep Q-Learning
+   Adds a layer of privacy by using SMPC to securely aggregate weights from individual models.
 
-Adds a layer of privacy by using SMPC to securely aggregate weights from individual models.
 Results
 
 Training results are stored in the results/ directory as .npz files:
