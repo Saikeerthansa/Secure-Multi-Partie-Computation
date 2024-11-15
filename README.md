@@ -30,8 +30,9 @@ The project combines **Reinforcement Learning (RL)** techniques such as:
 ├── setup.py                 # Environment and agent setup
 ├── temp.ppm                 # Temporary files
 └── README.md                # Project documentation
+```
 
-Setup Instructions
+##Setup Instructions
 Prerequisites
 
     Python 3.8 or higher
